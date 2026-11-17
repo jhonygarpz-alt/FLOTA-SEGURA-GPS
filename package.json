@@ -1,0 +1,15 @@
+{
+  "name": "flota-segura-gps",
+  "private": true,
+  "version": "0.1.0",
+  "description": "FLOTA SEGURA GPS — plataforma SaaS de rastreo satelital de SECUREFLEET CONSULTING",
+  "workspaces": ["apps/api", "apps/web"],
+  "scripts": {
+    "dev:api": "npm run start:dev -w apps/api",
+    "dev:web": "npm run dev -w apps/web",
+    "build": "npm run build -w apps/api && npm run build -w apps/web",
+    "test": "npm run test -w apps/api && npm run test -w apps/web",
+    "lint": "npm run typecheck -w apps/api && npm run typecheck -w apps/web"
+  },
+  "engines": { "node": ">=20" }
+}

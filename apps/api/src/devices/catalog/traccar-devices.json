@@ -1,0 +1,2689 @@
+{
+ "source": "https://www.traccar.org/devices/",
+ "retrievedAt": "2026-11-17",
+ "traccarVersion": "6.16.0",
+ "devices": [
+  {
+   "manufacturer": "Coban",
+   "model": "TK103-2B",
+   "protocol": "gps103",
+   "port": 5001
+  },
+  {
+   "manufacturer": "Coban",
+   "model": "TK104",
+   "protocol": "gps103",
+   "port": 5001
+  },
+  {
+   "manufacturer": "Coban",
+   "model": "GPS-103",
+   "protocol": "gps103",
+   "port": 5001
+  },
+  {
+   "manufacturer": "Coban",
+   "model": "GPS-103-A",
+   "protocol": "gps103",
+   "port": 5001
+  },
+  {
+   "manufacturer": "Coban",
+   "model": "GPS102",
+   "protocol": "gps103",
+   "port": 5001
+  },
+  {
+   "manufacturer": "Coban",
+   "model": "GPS102B",
+   "protocol": "gps103",
+   "port": 5001
+  },
+  {
+   "manufacturer": "Coban",
+   "model": "GPS104",
+   "protocol": "gps103",
+   "port": 5001
+  },
+  {
+   "manufacturer": "Coban",
+   "model": "306A",
+   "protocol": "gps103",
+   "port": 5001
+  },
+  {
+   "manufacturer": "Coban",
+   "model": "GPS105B",
+   "protocol": "gps103",
+   "port": 5001
+  },
+  {
+   "manufacturer": "Coban",
+   "model": "GPS106",
+   "protocol": "gps103",
+   "port": 5001
+  },
+  {
+   "manufacturer": "Coban",
+   "model": "GPS107",
+   "protocol": "gps103",
+   "port": 5001
+  },
+  {
+   "manufacturer": "Coban",
+   "model": "GPS301",
+   "protocol": "gps103",
+   "port": 5001
+  },
+  {
+   "manufacturer": "Coban",
+   "model": "GPS302",
+   "protocol": "gps103",
+   "port": 5001
+  },
+  {
+   "manufacturer": "Coban",
+   "model": "GPS303",
+   "protocol": "gps103",
+   "port": 5001
+  },
+  {
+   "manufacturer": "Coban",
+   "model": "GPS304",
+   "protocol": "gps103",
+   "port": 5001
+  },
+  {
+   "manufacturer": "Coban",
+   "model": "GPS305",
+   "protocol": "gps103",
+   "port": 5001
+  },
+  {
+   "manufacturer": "Coban",
+   "model": "GPS306",
+   "protocol": "gps103",
+   "port": 5001
+  },
+  {
+   "manufacturer": "Coban",
+   "model": "GPS303-G",
+   "protocol": "gps103",
+   "port": 5001
+  },
+  {
+   "manufacturer": "Coban",
+   "model": "303F",
+   "protocol": "gps103",
+   "port": 5001
+  },
+  {
+   "manufacturer": "Coban",
+   "model": "TK303B",
+   "protocol": "gps103",
+   "port": 5001
+  },
+  {
+   "manufacturer": "Coban",
+   "model": "TK303G",
+   "protocol": "gps103",
+   "port": 5001
+  },
+  {
+   "manufacturer": "Coban",
+   "model": "TK103A",
+   "protocol": "tk103",
+   "port": 5002
+  },
+  {
+   "manufacturer": "Coban",
+   "model": "TK103B",
+   "protocol": "tk103",
+   "port": 5002
+  },
+  {
+   "manufacturer": "Queclink",
+   "model": "GL100",
+   "protocol": "gl100",
+   "port": 5003
+  },
+  {
+   "manufacturer": "Queclink",
+   "model": "GL100M",
+   "protocol": "gl200",
+   "port": 5004
+  },
+  {
+   "manufacturer": "Queclink",
+   "model": "GL200",
+   "protocol": "gl200",
+   "port": 5004
+  },
+  {
+   "manufacturer": "Queclink",
+   "model": "GV300N",
+   "protocol": "gl200",
+   "port": 5004
+  },
+  {
+   "manufacturer": "Queclink",
+   "model": "GT200",
+   "protocol": "gl200",
+   "port": 5004
+  },
+  {
+   "manufacturer": "Queclink",
+   "model": "GT300",
+   "protocol": "gl200",
+   "port": 5004
+  },
+  {
+   "manufacturer": "Queclink",
+   "model": "GT500",
+   "protocol": "gl200",
+   "port": 5004
+  },
+  {
+   "manufacturer": "Queclink",
+   "model": "GL300",
+   "protocol": "gl200",
+   "port": 5004
+  },
+  {
+   "manufacturer": "Queclink",
+   "model": "GL3000W Series",
+   "protocol": "gl200",
+   "port": 5004
+  },
+  {
+   "manufacturer": "Queclink",
+   "model": "GL300VC",
+   "protocol": "gl200",
+   "port": 5004
+  },
+  {
+   "manufacturer": "Queclink",
+   "model": "GL300W Series",
+   "protocol": "gl200",
+   "port": 5004
+  },
+  {
+   "manufacturer": "Queclink",
+   "model": "GL500",
+   "protocol": "gl200",
+   "port": 5004
+  },
+  {
+   "manufacturer": "Queclink",
+   "model": "GL505",
+   "protocol": "gl200",
+   "port": 5004
+  },
+  {
+   "manufacturer": "Queclink",
+   "model": "GL520",
+   "protocol": "gl200",
+   "port": 5004
+  },
+  {
+   "manufacturer": "Queclink",
+   "model": "GT301",
+   "protocol": "gl200",
+   "port": 5004
+  },
+  {
+   "manufacturer": "Queclink",
+   "model": "GB100",
+   "protocol": "gl200",
+   "port": 5004
+  },
+  {
+   "manufacturer": "Queclink",
+   "model": "GB100MG",
+   "protocol": "gl200",
+   "port": 5004
+  },
+  {
+   "manufacturer": "Queclink",
+   "model": "GMT100",
+   "protocol": "gl200",
+   "port": 5004
+  },
+  {
+   "manufacturer": "Queclink",
+   "model": "GMT200",
+   "protocol": "gl200",
+   "port": 5004
+  },
+  {
+   "manufacturer": "Queclink",
+   "model": "GS100",
+   "protocol": "gl200",
+   "port": 5004
+  },
+  {
+   "manufacturer": "Queclink",
+   "model": "GV200",
+   "protocol": "gl200",
+   "port": 5004
+  },
+  {
+   "manufacturer": "Queclink",
+   "model": "GV300",
+   "protocol": "gl200",
+   "port": 5004
+  },
+  {
+   "manufacturer": "Queclink",
+   "model": "GV300VC",
+   "protocol": "gl200",
+   "port": 5004
+  },
+  {
+   "manufacturer": "Queclink",
+   "model": "GV300W",
+   "protocol": "gl200",
+   "port": 5004
+  },
+  {
+   "manufacturer": "Queclink",
+   "model": "GV500",
+   "protocol": "gl200",
+   "port": 5004
+  },
+  {
+   "manufacturer": "Queclink",
+   "model": "GV500VC",
+   "protocol": "gl200",
+   "port": 5004
+  },
+  {
+   "manufacturer": "Queclink",
+   "model": "GV50LTA",
+   "protocol": "gl200",
+   "port": 5004
+  },
+  {
+   "manufacturer": "Queclink",
+   "model": "GV55",
+   "protocol": "gl200",
+   "port": 5004
+  },
+  {
+   "manufacturer": "Queclink",
+   "model": "GV55 Lite",
+   "protocol": "gl200",
+   "port": 5004
+  },
+  {
+   "manufacturer": "Queclink",
+   "model": "GV55VC",
+   "protocol": "gl200",
+   "port": 5004
+  },
+  {
+   "manufacturer": "Queclink",
+   "model": "GV600W",
+   "protocol": "gl200",
+   "port": 5004
+  },
+  {
+   "manufacturer": "Queclink",
+   "model": "GV65",
+   "protocol": "gl200",
+   "port": 5004
+  },
+  {
+   "manufacturer": "Queclink",
+   "model": "GV65 Plus",
+   "protocol": "gl200",
+   "port": 5004
+  },
+  {
+   "manufacturer": "Queclink",
+   "model": "GV75",
+   "protocol": "gl200",
+   "port": 5004
+  },
+  {
+   "manufacturer": "Queclink",
+   "model": "GV75W",
+   "protocol": "gl200",
+   "port": 5004
+  },
+  {
+   "manufacturer": "Queclink",
+   "model": "Prime AT Plus",
+   "protocol": "gl200",
+   "port": 5004
+  },
+  {
+   "manufacturer": "Queclink",
+   "model": "GV500MAP",
+   "protocol": "gl200",
+   "port": 5004
+  },
+  {
+   "manufacturer": "Queclink",
+   "model": "GB100CG",
+   "protocol": "gl200",
+   "port": 5004
+  },
+  {
+   "manufacturer": "Queclink",
+   "model": "GB130MG",
+   "protocol": "gl200",
+   "port": 5004
+  },
+  {
+   "manufacturer": "Queclink",
+   "model": "GES100CG",
+   "protocol": "gl200",
+   "port": 5004
+  },
+  {
+   "manufacturer": "Queclink",
+   "model": "GL30MEU",
+   "protocol": "gl200",
+   "port": 5004
+  },
+  {
+   "manufacturer": "Queclink",
+   "model": "GL30MG",
+   "protocol": "gl200",
+   "port": 5004
+  },
+  {
+   "manufacturer": "Queclink",
+   "model": "GL320MG",
+   "protocol": "gl200",
+   "port": 5004
+  },
+  {
+   "manufacturer": "Queclink",
+   "model": "GL33CG",
+   "protocol": "gl200",
+   "port": 5004
+  },
+  {
+   "manufacturer": "Queclink",
+   "model": "GL500M",
+   "protocol": "gl200",
+   "port": 5004
+  },
+  {
+   "manufacturer": "Queclink",
+   "model": "GL500MG",
+   "protocol": "gl200",
+   "port": 5004
+  },
+  {
+   "manufacturer": "Queclink",
+   "model": "GL501MG",
+   "protocol": "gl200",
+   "port": 5004
+  },
+  {
+   "manufacturer": "Queclink",
+   "model": "GL502MG",
+   "protocol": "gl200",
+   "port": 5004
+  },
+  {
+   "manufacturer": "Queclink",
+   "model": "GL50B",
+   "protocol": "gl200",
+   "port": 5004
+  },
+  {
+   "manufacturer": "Queclink",
+   "model": "GL51CG",
+   "protocol": "gl200",
+   "port": 5004
+  },
+  {
+   "manufacturer": "Queclink",
+   "model": "GL520MG",
+   "protocol": "gl200",
+   "port": 5004
+  },
+  {
+   "manufacturer": "Queclink",
+   "model": "GL521MG",
+   "protocol": "gl200",
+   "port": 5004
+  },
+  {
+   "manufacturer": "Queclink",
+   "model": "GL530",
+   "protocol": "gl200",
+   "port": 5004
+  },
+  {
+   "manufacturer": "Queclink",
+   "model": "GL530M",
+   "protocol": "gl200",
+   "port": 5004
+  },
+  {
+   "manufacturer": "Queclink",
+   "model": "GL530MG",
+   "protocol": "gl200",
+   "port": 5004
+  },
+  {
+   "manufacturer": "Queclink",
+   "model": "GL533CG",
+   "protocol": "gl200",
+   "port": 5004
+  },
+  {
+   "manufacturer": "Queclink",
+   "model": "GL53MG",
+   "protocol": "gl200",
+   "port": 5004
+  },
+  {
+   "manufacturer": "Queclink",
+   "model": "GL601",
+   "protocol": "gl200",
+   "port": 5004
+  },
+  {
+   "manufacturer": "Queclink",
+   "model": "GL601CAU",
+   "protocol": "gl200",
+   "port": 5004
+  },
+  {
+   "manufacturer": "Queclink",
+   "model": "GL601CEU",
+   "protocol": "gl200",
+   "port": 5004
+  },
+  {
+   "manufacturer": "Queclink",
+   "model": "GL601MG",
+   "protocol": "gl200",
+   "port": 5004
+  },
+  {
+   "manufacturer": "Queclink",
+   "model": "GV300CAN",
+   "protocol": "gl200",
+   "port": 5004
+  },
+  {
+   "manufacturer": "Queclink",
+   "model": "GV300CEU",
+   "protocol": "gl200",
+   "port": 5004
+  },
+  {
+   "manufacturer": "Queclink",
+   "model": "GV305CEU",
+   "protocol": "gl200",
+   "port": 5004
+  },
+  {
+   "manufacturer": "Queclink",
+   "model": "GV30CEU",
+   "protocol": "gl200",
+   "port": 5004
+  },
+  {
+   "manufacturer": "Queclink",
+   "model": "GV310LAU",
+   "protocol": "gl200",
+   "port": 5004
+  },
+  {
+   "manufacturer": "Queclink",
+   "model": "GV350CEU",
+   "protocol": "gl200",
+   "port": 5004
+  },
+  {
+   "manufacturer": "Queclink",
+   "model": "GV350MG",
+   "protocol": "gl200",
+   "port": 5004
+  },
+  {
+   "manufacturer": "Queclink",
+   "model": "GV355CEU",
+   "protocol": "gl200",
+   "port": 5004
+  },
+  {
+   "manufacturer": "Queclink",
+   "model": "GV37CEU",
+   "protocol": "gl200",
+   "port": 5004
+  },
+  {
+   "manufacturer": "Queclink",
+   "model": "GV50",
+   "protocol": "gl200",
+   "port": 5004
+  },
+  {
+   "manufacturer": "Queclink",
+   "model": "GV500CG",
+   "protocol": "gl200",
+   "port": 5004
+  },
+  {
+   "manufacturer": "Queclink",
+   "model": "GV500CNA",
+   "protocol": "gl200",
+   "port": 5004
+  },
+  {
+   "manufacturer": "Queclink",
+   "model": "GV500MA",
+   "protocol": "gl200",
+   "port": 5004
+  },
+  {
+   "manufacturer": "Queclink",
+   "model": "GV500MG",
+   "protocol": "gl200",
+   "port": 5004
+  },
+  {
+   "manufacturer": "Queclink",
+   "model": "GV500MGP",
+   "protocol": "gl200",
+   "port": 5004
+  },
+  {
+   "manufacturer": "Queclink",
+   "model": "GV501LG",
+   "protocol": "gl200",
+   "port": 5004
+  },
+  {
+   "manufacturer": "Queclink",
+   "model": "GV50CEU",
+   "protocol": "gl200",
+   "port": 5004
+  },
+  {
+   "manufacturer": "Queclink",
+   "model": "GV50CG",
+   "protocol": "gl200",
+   "port": 5004
+  },
+  {
+   "manufacturer": "Queclink",
+   "model": "GV50CNA",
+   "protocol": "gl200",
+   "port": 5004
+  },
+  {
+   "manufacturer": "Queclink",
+   "model": "GV51MG",
+   "protocol": "gl200",
+   "port": 5004
+  },
+  {
+   "manufacturer": "Queclink",
+   "model": "GV53MG",
+   "protocol": "gl200",
+   "port": 5004
+  },
+  {
+   "manufacturer": "Queclink",
+   "model": "GV56",
+   "protocol": "gl200",
+   "port": 5004
+  },
+  {
+   "manufacturer": "Queclink",
+   "model": "GV56RS",
+   "protocol": "gl200",
+   "port": 5004
+  },
+  {
+   "manufacturer": "Queclink",
+   "model": "GV57CEU",
+   "protocol": "gl200",
+   "port": 5004
+  },
+  {
+   "manufacturer": "Queclink",
+   "model": "GV57CG",
+   "protocol": "gl200",
+   "port": 5004
+  },
+  {
+   "manufacturer": "Queclink",
+   "model": "GV57MG",
+   "protocol": "gl200",
+   "port": 5004
+  },
+  {
+   "manufacturer": "Queclink",
+   "model": "GV58CEU",
+   "protocol": "gl200",
+   "port": 5004
+  },
+  {
+   "manufacturer": "Queclink",
+   "model": "GV58CG",
+   "protocol": "gl200",
+   "port": 5004
+  },
+  {
+   "manufacturer": "Queclink",
+   "model": "GV58LAU",
+   "protocol": "gl200",
+   "port": 5004
+  },
+  {
+   "manufacturer": "Queclink",
+   "model": "GV600",
+   "protocol": "gl200",
+   "port": 5004
+  },
+  {
+   "manufacturer": "Queclink",
+   "model": "GV600WG",
+   "protocol": "gl200",
+   "port": 5004
+  },
+  {
+   "manufacturer": "Queclink",
+   "model": "GV620MG",
+   "protocol": "gl200",
+   "port": 5004
+  },
+  {
+   "manufacturer": "Queclink",
+   "model": "GV650MG",
+   "protocol": "gl200",
+   "port": 5004
+  },
+  {
+   "manufacturer": "Queclink",
+   "model": "GV651CAU",
+   "protocol": "gl200",
+   "port": 5004
+  },
+  {
+   "manufacturer": "Queclink",
+   "model": "GV75CG",
+   "protocol": "gl200",
+   "port": 5004
+  },
+  {
+   "manufacturer": "Queclink",
+   "model": "GV75MG",
+   "protocol": "gl200",
+   "port": 5004
+  },
+  {
+   "manufacturer": "Queclink",
+   "model": "GV850CEU",
+   "protocol": "gl200",
+   "port": 5004
+  },
+  {
+   "manufacturer": "Queclink",
+   "model": "GV850CNA",
+   "protocol": "gl200",
+   "port": 5004
+  },
+  {
+   "manufacturer": "Queclink",
+   "model": "GV851CEU",
+   "protocol": "gl200",
+   "port": 5004
+  },
+  {
+   "manufacturer": "Queclink",
+   "model": "GV851CNA",
+   "protocol": "gl200",
+   "port": 5004
+  },
+  {
+   "manufacturer": "Suntech",
+   "model": "ST200",
+   "protocol": "suntech",
+   "port": 5011
+  },
+  {
+   "manufacturer": "Suntech",
+   "model": "ST210",
+   "protocol": "suntech",
+   "port": 5011
+  },
+  {
+   "manufacturer": "Suntech",
+   "model": "ST215",
+   "protocol": "suntech",
+   "port": 5011
+  },
+  {
+   "manufacturer": "Suntech",
+   "model": "ST215I",
+   "protocol": "suntech",
+   "port": 5011
+  },
+  {
+   "manufacturer": "Suntech",
+   "model": "ST215E",
+   "protocol": "suntech",
+   "port": 5011
+  },
+  {
+   "manufacturer": "Suntech",
+   "model": "ST240",
+   "protocol": "suntech",
+   "port": 5011
+  },
+  {
+   "manufacturer": "Suntech",
+   "model": "ST230",
+   "protocol": "suntech",
+   "port": 5011
+  },
+  {
+   "manufacturer": "Suntech",
+   "model": "ST410",
+   "protocol": "suntech",
+   "port": 5011
+  },
+  {
+   "manufacturer": "Suntech",
+   "model": "ST900",
+   "protocol": "suntech",
+   "port": 5011
+  },
+  {
+   "manufacturer": "Suntech",
+   "model": "ST910",
+   "protocol": "suntech",
+   "port": 5011
+  },
+  {
+   "manufacturer": "Suntech",
+   "model": "ST-910",
+   "protocol": "suntech",
+   "port": 5011
+  },
+  {
+   "manufacturer": "Suntech",
+   "model": "ST-940",
+   "protocol": "suntech",
+   "port": 5011
+  },
+  {
+   "manufacturer": "Suntech",
+   "model": "ST4215",
+   "protocol": "suntech",
+   "port": 5011
+  },
+  {
+   "manufacturer": "Suntech",
+   "model": "ST4290",
+   "protocol": "suntech",
+   "port": 5011
+  },
+  {
+   "manufacturer": "Suntech",
+   "model": "ST4305",
+   "protocol": "suntech",
+   "port": 5011
+  },
+  {
+   "manufacturer": "Suntech",
+   "model": "ST4315",
+   "protocol": "suntech",
+   "port": 5011
+  },
+  {
+   "manufacturer": "Suntech",
+   "model": "ST4335",
+   "protocol": "suntech",
+   "port": 5011
+  },
+  {
+   "manufacturer": "Suntech",
+   "model": "ST4345",
+   "protocol": "suntech",
+   "port": 5011
+  },
+  {
+   "manufacturer": "Suntech",
+   "model": "ST4345LB",
+   "protocol": "suntech",
+   "port": 5011
+  },
+  {
+   "manufacturer": "Suntech",
+   "model": "ST4410G",
+   "protocol": "suntech",
+   "port": 5011
+  },
+  {
+   "manufacturer": "Suntech",
+   "model": "ST4505",
+   "protocol": "suntech",
+   "port": 5011
+  },
+  {
+   "manufacturer": "Suntech",
+   "model": "ST4915",
+   "protocol": "suntech",
+   "port": 5011
+  },
+  {
+   "manufacturer": "Suntech",
+   "model": "ST4932",
+   "protocol": "suntech",
+   "port": 5011
+  },
+  {
+   "manufacturer": "Suntech",
+   "model": "ST4945",
+   "protocol": "suntech",
+   "port": 5011
+  },
+  {
+   "manufacturer": "Suntech",
+   "model": "ST4955",
+   "protocol": "suntech",
+   "port": 5011
+  },
+  {
+   "manufacturer": "Suntech",
+   "model": "ST6560",
+   "protocol": "suntech",
+   "port": 5011
+  },
+  {
+   "manufacturer": "Suntech",
+   "model": "ST8300",
+   "protocol": "suntech",
+   "port": 5011
+  },
+  {
+   "manufacturer": "Suntech",
+   "model": "ST8310",
+   "protocol": "suntech",
+   "port": 5011
+  },
+  {
+   "manufacturer": "Suntech",
+   "model": "ST410MG",
+   "protocol": "suntech",
+   "port": 5011
+  },
+  {
+   "manufacturer": "Suntech",
+   "model": "ST419NG",
+   "protocol": "suntech",
+   "port": 5011
+  },
+  {
+   "manufacturer": "Suntech",
+   "model": "ST20U",
+   "protocol": "suntech",
+   "port": 5011
+  },
+  {
+   "manufacturer": "Suntech",
+   "model": "ST25T",
+   "protocol": "suntech",
+   "port": 5011
+  },
+  {
+   "manufacturer": "Sinotrack",
+   "model": "ST-901",
+   "protocol": "h02",
+   "port": 5013
+  },
+  {
+   "manufacturer": "Sinotrack",
+   "model": "ST-902W",
+   "protocol": "jt808",
+   "port": 5015
+  },
+  {
+   "manufacturer": "Sinotrack",
+   "model": "ST-901 A+",
+   "protocol": "jt808",
+   "port": 5015
+  },
+  {
+   "manufacturer": "Jimi IoT",
+   "model": "JC181",
+   "protocol": "jt808",
+   "port": 5015
+  },
+  {
+   "manufacturer": "Jimi IoT",
+   "model": "JC182",
+   "protocol": "jt808",
+   "port": 5015
+  },
+  {
+   "manufacturer": "Jimi IoT",
+   "model": "JC371",
+   "protocol": "jt808",
+   "port": 5015
+  },
+  {
+   "manufacturer": "Jimi IoT",
+   "model": "JC450",
+   "protocol": "jt808",
+   "port": 5015
+  },
+  {
+   "manufacturer": "Jimi IoT",
+   "model": "JC451",
+   "protocol": "jt808",
+   "port": 5015
+  },
+  {
+   "manufacturer": "Jimi IoT",
+   "model": "VL502",
+   "protocol": "jt808",
+   "port": 5015
+  },
+  {
+   "manufacturer": "Jimi IoT",
+   "model": "VL533",
+   "protocol": "jt808",
+   "port": 5015
+  },
+  {
+   "manufacturer": "Meitrack",
+   "model": "MT80",
+   "protocol": "meitrack",
+   "port": 5020
+  },
+  {
+   "manufacturer": "Meitrack",
+   "model": "MT80i",
+   "protocol": "meitrack",
+   "port": 5020
+  },
+  {
+   "manufacturer": "Meitrack",
+   "model": "MT88",
+   "protocol": "meitrack",
+   "port": 5020
+  },
+  {
+   "manufacturer": "Meitrack",
+   "model": "MT90",
+   "protocol": "meitrack",
+   "port": 5020
+  },
+  {
+   "manufacturer": "Meitrack",
+   "model": "KT90",
+   "protocol": "meitrack",
+   "port": 5020
+  },
+  {
+   "manufacturer": "Meitrack",
+   "model": "MVT100",
+   "protocol": "meitrack",
+   "port": 5020
+  },
+  {
+   "manufacturer": "Meitrack",
+   "model": "MVT340",
+   "protocol": "meitrack",
+   "port": 5020
+  },
+  {
+   "manufacturer": "Meitrack",
+   "model": "MVT380",
+   "protocol": "meitrack",
+   "port": 5020
+  },
+  {
+   "manufacturer": "Meitrack",
+   "model": "MVT600",
+   "protocol": "meitrack",
+   "port": 5020
+  },
+  {
+   "manufacturer": "Meitrack",
+   "model": "MVT800",
+   "protocol": "meitrack",
+   "port": 5020
+  },
+  {
+   "manufacturer": "Meitrack",
+   "model": "T1",
+   "protocol": "meitrack",
+   "port": 5020
+  },
+  {
+   "manufacturer": "Meitrack",
+   "model": "T3",
+   "protocol": "meitrack",
+   "port": 5020
+  },
+  {
+   "manufacturer": "Meitrack",
+   "model": "TC68",
+   "protocol": "meitrack",
+   "port": 5020
+  },
+  {
+   "manufacturer": "Meitrack",
+   "model": "TC68S",
+   "protocol": "meitrack",
+   "port": 5020
+  },
+  {
+   "manufacturer": "Meitrack",
+   "model": "T322",
+   "protocol": "meitrack",
+   "port": 5020
+  },
+  {
+   "manufacturer": "Meitrack",
+   "model": "T622",
+   "protocol": "meitrack",
+   "port": 5020
+  },
+  {
+   "manufacturer": "Meitrack",
+   "model": "P99G",
+   "protocol": "meitrack",
+   "port": 5020
+  },
+  {
+   "manufacturer": "Meitrack",
+   "model": "P88L",
+   "protocol": "meitrack",
+   "port": 5020
+  },
+  {
+   "manufacturer": "Meitrack",
+   "model": "P99L",
+   "protocol": "meitrack",
+   "port": 5020
+  },
+  {
+   "manufacturer": "Meitrack",
+   "model": "K211L",
+   "protocol": "meitrack",
+   "port": 5020
+  },
+  {
+   "manufacturer": "Meitrack",
+   "model": "TA255",
+   "protocol": "meitrack",
+   "port": 5020
+  },
+  {
+   "manufacturer": "Meitrack",
+   "model": "T333L",
+   "protocol": "meitrack",
+   "port": 5020
+  },
+  {
+   "manufacturer": "Meitrack",
+   "model": "T399L",
+   "protocol": "meitrack",
+   "port": 5020
+  },
+  {
+   "manufacturer": "Meitrack",
+   "model": "T399E",
+   "protocol": "meitrack",
+   "port": 5020
+  },
+  {
+   "manufacturer": "Meitrack",
+   "model": "T622E-F9",
+   "protocol": "meitrack",
+   "port": 5020
+  },
+  {
+   "manufacturer": "Meitrack",
+   "model": "T633L",
+   "protocol": "meitrack",
+   "port": 5020
+  },
+  {
+   "manufacturer": "Meitrack",
+   "model": "T633Li",
+   "protocol": "meitrack",
+   "port": 5020
+  },
+  {
+   "manufacturer": "Meitrack",
+   "model": "TC68L",
+   "protocol": "meitrack",
+   "port": 5020
+  },
+  {
+   "manufacturer": "Meitrack",
+   "model": "TS299L",
+   "protocol": "meitrack",
+   "port": 5020
+  },
+  {
+   "manufacturer": "Meitrack",
+   "model": "T622G-F9",
+   "protocol": "meitrack",
+   "port": 5020
+  },
+  {
+   "manufacturer": "Concox",
+   "model": "GT02",
+   "protocol": "gt02",
+   "port": 5022
+  },
+  {
+   "manufacturer": "Concox",
+   "model": "TR02",
+   "protocol": "gt02",
+   "port": 5022
+  },
+  {
+   "manufacturer": "Concox",
+   "model": "GT02A",
+   "protocol": "gt02",
+   "port": 5022
+  },
+  {
+   "manufacturer": "Concox",
+   "model": "GT06N",
+   "protocol": "gt06",
+   "port": 5023
+  },
+  {
+   "manufacturer": "Concox",
+   "model": "GT07",
+   "protocol": "gt06",
+   "port": 5023
+  },
+  {
+   "manufacturer": "Concox",
+   "model": "GT09",
+   "protocol": "gt06",
+   "port": 5023
+  },
+  {
+   "manufacturer": "Concox",
+   "model": "GT03",
+   "protocol": "gt06",
+   "port": 5023
+  },
+  {
+   "manufacturer": "Concox",
+   "model": "GT03A",
+   "protocol": "gt06",
+   "port": 5023
+  },
+  {
+   "manufacturer": "Concox",
+   "model": "GT03B",
+   "protocol": "gt06",
+   "port": 5023
+  },
+  {
+   "manufacturer": "Concox",
+   "model": "GS503",
+   "protocol": "gt06",
+   "port": 5023
+  },
+  {
+   "manufacturer": "Concox",
+   "model": "GT100",
+   "protocol": "gt06",
+   "port": 5023
+  },
+  {
+   "manufacturer": "Concox",
+   "model": "GT06D",
+   "protocol": "gt06",
+   "port": 5023
+  },
+  {
+   "manufacturer": "Concox",
+   "model": "GK301",
+   "protocol": "gt06",
+   "port": 5023
+  },
+  {
+   "manufacturer": "Concox",
+   "model": "GK503",
+   "protocol": "gt06",
+   "port": 5023
+  },
+  {
+   "manufacturer": "Jimi IoT",
+   "model": "JM01",
+   "protocol": "gt06",
+   "port": 5023
+  },
+  {
+   "manufacturer": "Jimi IoT",
+   "model": "JM08",
+   "protocol": "gt06",
+   "port": 5023
+  },
+  {
+   "manufacturer": "Concox",
+   "model": "GT02D",
+   "protocol": "gt06",
+   "port": 5023
+  },
+  {
+   "manufacturer": "Concox",
+   "model": "CRX1",
+   "protocol": "gt06",
+   "port": 5023
+  },
+  {
+   "manufacturer": "Concox",
+   "model": "CRX3",
+   "protocol": "gt06",
+   "port": 5023
+  },
+  {
+   "manufacturer": "Concox",
+   "model": "JV200",
+   "protocol": "gt06",
+   "port": 5023
+  },
+  {
+   "manufacturer": "Concox",
+   "model": "TR06",
+   "protocol": "gt06",
+   "port": 5023
+  },
+  {
+   "manufacturer": "Concox",
+   "model": "JI09",
+   "protocol": "gt06",
+   "port": 5023
+  },
+  {
+   "manufacturer": "Concox",
+   "model": "GT300",
+   "protocol": "gt06",
+   "port": 5023
+  },
+  {
+   "manufacturer": "Concox",
+   "model": "GT230",
+   "protocol": "gt06",
+   "port": 5023
+  },
+  {
+   "manufacturer": "Concox",
+   "model": "TW02B",
+   "protocol": "gt06",
+   "port": 5023
+  },
+  {
+   "manufacturer": "Jimi IoT",
+   "model": "JM-VG01U",
+   "protocol": "gt06",
+   "port": 5023
+  },
+  {
+   "manufacturer": "Jimi IoT",
+   "model": "JM-VG02U",
+   "protocol": "gt06",
+   "port": 5023
+  },
+  {
+   "manufacturer": "Jimi IoT",
+   "model": "JM-VL01",
+   "protocol": "gt06",
+   "port": 5023
+  },
+  {
+   "manufacturer": "Jimi IoT",
+   "model": "JM-VL02",
+   "protocol": "gt06",
+   "port": 5023
+  },
+  {
+   "manufacturer": "Jimi IoT",
+   "model": "JM-VL03",
+   "protocol": "gt06",
+   "port": 5023
+  },
+  {
+   "manufacturer": "Jimi IoT",
+   "model": "JM-VL04",
+   "protocol": "gt06",
+   "port": 5023
+  },
+  {
+   "manufacturer": "Concox",
+   "model": "GT710",
+   "protocol": "gt06",
+   "port": 5023
+  },
+  {
+   "manufacturer": "Concox",
+   "model": "GT800",
+   "protocol": "gt06",
+   "port": 5023
+  },
+  {
+   "manufacturer": "Concox",
+   "model": "OB22",
+   "protocol": "gt06",
+   "port": 5023
+  },
+  {
+   "manufacturer": "Concox",
+   "model": "Q-Bit",
+   "protocol": "gt06",
+   "port": 5023
+  },
+  {
+   "manufacturer": "Jimi IoT",
+   "model": "JC181",
+   "protocol": "gt06",
+   "port": 5023
+  },
+  {
+   "manufacturer": "Jimi IoT",
+   "model": "JC261",
+   "protocol": "gt06",
+   "port": 5023
+  },
+  {
+   "manufacturer": "Jimi IoT",
+   "model": "JC400",
+   "protocol": "gt06",
+   "port": 5023
+  },
+  {
+   "manufacturer": "Jimi IoT",
+   "model": "LL02",
+   "protocol": "gt06",
+   "port": 5023
+  },
+  {
+   "manufacturer": "Jimi IoT",
+   "model": "LL301",
+   "protocol": "gt06",
+   "port": 5023
+  },
+  {
+   "manufacturer": "Jimi IoT",
+   "model": "LL302",
+   "protocol": "gt06",
+   "port": 5023
+  },
+  {
+   "manufacturer": "Jimi IoT",
+   "model": "LL303",
+   "protocol": "gt06",
+   "port": 5023
+  },
+  {
+   "manufacturer": "Jimi IoT",
+   "model": "LL303PRO",
+   "protocol": "gt06",
+   "port": 5023
+  },
+  {
+   "manufacturer": "Jimi IoT",
+   "model": "LL305",
+   "protocol": "gt06",
+   "port": 5023
+  },
+  {
+   "manufacturer": "Jimi IoT",
+   "model": "LL305M",
+   "protocol": "gt06",
+   "port": 5023
+  },
+  {
+   "manufacturer": "Jimi IoT",
+   "model": "LL701",
+   "protocol": "gt06",
+   "port": 5023
+  },
+  {
+   "manufacturer": "Jimi IoT",
+   "model": "LL702",
+   "protocol": "gt06",
+   "port": 5023
+  },
+  {
+   "manufacturer": "Jimi IoT",
+   "model": "LL704",
+   "protocol": "gt06",
+   "port": 5023
+  },
+  {
+   "manufacturer": "Jimi IoT",
+   "model": "LL705",
+   "protocol": "gt06",
+   "port": 5023
+  },
+  {
+   "manufacturer": "Jimi IoT",
+   "model": "LL309",
+   "protocol": "gt06",
+   "port": 5023
+  },
+  {
+   "manufacturer": "Jimi IoT",
+   "model": "LL706",
+   "protocol": "gt06",
+   "port": 5023
+  },
+  {
+   "manufacturer": "Jimi IoT",
+   "model": "LL708",
+   "protocol": "gt06",
+   "port": 5023
+  },
+  {
+   "manufacturer": "Jimi IoT",
+   "model": "PL601",
+   "protocol": "gt06",
+   "port": 5023
+  },
+  {
+   "manufacturer": "Jimi IoT",
+   "model": "VL103M",
+   "protocol": "gt06",
+   "port": 5023
+  },
+  {
+   "manufacturer": "Jimi IoT",
+   "model": "VL110C",
+   "protocol": "gt06",
+   "port": 5023
+  },
+  {
+   "manufacturer": "Jimi IoT",
+   "model": "VL512",
+   "protocol": "gt06",
+   "port": 5023
+  },
+  {
+   "manufacturer": "Jimi IoT",
+   "model": "VL802",
+   "protocol": "gt06",
+   "port": 5023
+  },
+  {
+   "manufacturer": "Concox",
+   "model": "GT02",
+   "protocol": "gt06",
+   "port": 5023
+  },
+  {
+   "manufacturer": "Concox",
+   "model": "GT02A",
+   "protocol": "gt06",
+   "port": 5023
+  },
+  {
+   "manufacturer": "Concox",
+   "model": "GT06E",
+   "protocol": "gt06",
+   "port": 5023
+  },
+  {
+   "manufacturer": "Jimi IoT",
+   "model": "JM-LL01",
+   "protocol": "gt06",
+   "port": 5023
+  },
+  {
+   "manufacturer": "Teltonika",
+   "model": "FMB965",
+   "protocol": "teltonika",
+   "port": 5027
+  },
+  {
+   "manufacturer": "Teltonika",
+   "model": "FMC920",
+   "protocol": "teltonika",
+   "port": 5027
+  },
+  {
+   "manufacturer": "Teltonika",
+   "model": "FMM920",
+   "protocol": "teltonika",
+   "port": 5027
+  },
+  {
+   "manufacturer": "Teltonika",
+   "model": "FMC003",
+   "protocol": "teltonika",
+   "port": 5027
+  },
+  {
+   "manufacturer": "Teltonika",
+   "model": "FMM003",
+   "protocol": "teltonika",
+   "port": 5027
+  },
+  {
+   "manufacturer": "Teltonika",
+   "model": "FMB150",
+   "protocol": "teltonika",
+   "port": 5027
+  },
+  {
+   "manufacturer": "Teltonika",
+   "model": "FMC150",
+   "protocol": "teltonika",
+   "port": 5027
+  },
+  {
+   "manufacturer": "Teltonika",
+   "model": "FMM150",
+   "protocol": "teltonika",
+   "port": 5027
+  },
+  {
+   "manufacturer": "Teltonika",
+   "model": "FM1100",
+   "protocol": "teltonika",
+   "port": 5027
+  },
+  {
+   "manufacturer": "Teltonika",
+   "model": "FM1110",
+   "protocol": "teltonika",
+   "port": 5027
+  },
+  {
+   "manufacturer": "Teltonika",
+   "model": "FM1010",
+   "protocol": "teltonika",
+   "port": 5027
+  },
+  {
+   "manufacturer": "Teltonika",
+   "model": "FM1120",
+   "protocol": "teltonika",
+   "port": 5027
+  },
+  {
+   "manufacturer": "Teltonika",
+   "model": "FM1202",
+   "protocol": "teltonika",
+   "port": 5027
+  },
+  {
+   "manufacturer": "Teltonika",
+   "model": "FM2100",
+   "protocol": "teltonika",
+   "port": 5027
+  },
+  {
+   "manufacturer": "Teltonika",
+   "model": "FM2200",
+   "protocol": "teltonika",
+   "port": 5027
+  },
+  {
+   "manufacturer": "Teltonika",
+   "model": "FM3001",
+   "protocol": "teltonika",
+   "port": 5027
+  },
+  {
+   "manufacturer": "Teltonika",
+   "model": "FM3200",
+   "protocol": "teltonika",
+   "port": 5027
+  },
+  {
+   "manufacturer": "Teltonika",
+   "model": "FM3612",
+   "protocol": "teltonika",
+   "port": 5027
+  },
+  {
+   "manufacturer": "Teltonika",
+   "model": "FM36M1",
+   "protocol": "teltonika",
+   "port": 5027
+  },
+  {
+   "manufacturer": "Teltonika",
+   "model": "FM4100",
+   "protocol": "teltonika",
+   "port": 5027
+  },
+  {
+   "manufacturer": "Teltonika",
+   "model": "FM4200",
+   "protocol": "teltonika",
+   "port": 5027
+  },
+  {
+   "manufacturer": "Teltonika",
+   "model": "FM5300",
+   "protocol": "teltonika",
+   "port": 5027
+  },
+  {
+   "manufacturer": "Teltonika",
+   "model": "FM6320",
+   "protocol": "teltonika",
+   "port": 5027
+  },
+  {
+   "manufacturer": "Teltonika",
+   "model": "GH3000",
+   "protocol": "teltonika",
+   "port": 5027
+  },
+  {
+   "manufacturer": "Teltonika",
+   "model": "FM3300",
+   "protocol": "teltonika",
+   "port": 5027
+  },
+  {
+   "manufacturer": "Teltonika",
+   "model": "CT2000E",
+   "protocol": "teltonika",
+   "port": 5027
+  },
+  {
+   "manufacturer": "Teltonika",
+   "model": "FM1204",
+   "protocol": "teltonika",
+   "port": 5027
+  },
+  {
+   "manufacturer": "Teltonika",
+   "model": "FM3622",
+   "protocol": "teltonika",
+   "port": 5027
+  },
+  {
+   "manufacturer": "Teltonika",
+   "model": "FMB900",
+   "protocol": "teltonika",
+   "port": 5027
+  },
+  {
+   "manufacturer": "Teltonika",
+   "model": "FMB920",
+   "protocol": "teltonika",
+   "port": 5027
+  },
+  {
+   "manufacturer": "Teltonika",
+   "model": "FMT100",
+   "protocol": "teltonika",
+   "port": 5027
+  },
+  {
+   "manufacturer": "Teltonika",
+   "model": "FMB001",
+   "protocol": "teltonika",
+   "port": 5027
+  },
+  {
+   "manufacturer": "Teltonika",
+   "model": "FMB002",
+   "protocol": "teltonika",
+   "port": 5027
+  },
+  {
+   "manufacturer": "Teltonika",
+   "model": "FMB010",
+   "protocol": "teltonika",
+   "port": 5027
+  },
+  {
+   "manufacturer": "Teltonika",
+   "model": "FMB020",
+   "protocol": "teltonika",
+   "port": 5027
+  },
+  {
+   "manufacturer": "Teltonika",
+   "model": "FMB110",
+   "protocol": "teltonika",
+   "port": 5027
+  },
+  {
+   "manufacturer": "Teltonika",
+   "model": "FMB120",
+   "protocol": "teltonika",
+   "port": 5027
+  },
+  {
+   "manufacturer": "Teltonika",
+   "model": "FMB122",
+   "protocol": "teltonika",
+   "port": 5027
+  },
+  {
+   "manufacturer": "Teltonika",
+   "model": "FMB125",
+   "protocol": "teltonika",
+   "port": 5027
+  },
+  {
+   "manufacturer": "Teltonika",
+   "model": "FMA110",
+   "protocol": "teltonika",
+   "port": 5027
+  },
+  {
+   "manufacturer": "Teltonika",
+   "model": "FMA120",
+   "protocol": "teltonika",
+   "port": 5027
+  },
+  {
+   "manufacturer": "Teltonika",
+   "model": "FMB202",
+   "protocol": "teltonika",
+   "port": 5027
+  },
+  {
+   "manufacturer": "Teltonika",
+   "model": "FMB204",
+   "protocol": "teltonika",
+   "port": 5027
+  },
+  {
+   "manufacturer": "Teltonika",
+   "model": "FMA202",
+   "protocol": "teltonika",
+   "port": 5027
+  },
+  {
+   "manufacturer": "Teltonika",
+   "model": "FMA204",
+   "protocol": "teltonika",
+   "port": 5027
+  },
+  {
+   "manufacturer": "Teltonika",
+   "model": "FMB630",
+   "protocol": "teltonika",
+   "port": 5027
+  },
+  {
+   "manufacturer": "Teltonika",
+   "model": "FMB640",
+   "protocol": "teltonika",
+   "port": 5027
+  },
+  {
+   "manufacturer": "Teltonika",
+   "model": "FMB962",
+   "protocol": "teltonika",
+   "port": 5027
+  },
+  {
+   "manufacturer": "Teltonika",
+   "model": "FMB964",
+   "protocol": "teltonika",
+   "port": 5027
+  },
+  {
+   "manufacturer": "Teltonika",
+   "model": "TMT250",
+   "protocol": "teltonika",
+   "port": 5027
+  },
+  {
+   "manufacturer": "Teltonika",
+   "model": "FMC001",
+   "protocol": "teltonika",
+   "port": 5027
+  },
+  {
+   "manufacturer": "Teltonika",
+   "model": "FMM001",
+   "protocol": "teltonika",
+   "port": 5027
+  },
+  {
+   "manufacturer": "Teltonika",
+   "model": "FMC125",
+   "protocol": "teltonika",
+   "port": 5027
+  },
+  {
+   "manufacturer": "Teltonika",
+   "model": "FMC130",
+   "protocol": "teltonika",
+   "port": 5027
+  },
+  {
+   "manufacturer": "Teltonika",
+   "model": "FMC640",
+   "protocol": "teltonika",
+   "port": 5027
+  },
+  {
+   "manufacturer": "Teltonika",
+   "model": "FMM125",
+   "protocol": "teltonika",
+   "port": 5027
+  },
+  {
+   "manufacturer": "Teltonika",
+   "model": "FMM130",
+   "protocol": "teltonika",
+   "port": 5027
+  },
+  {
+   "manufacturer": "Teltonika",
+   "model": "FMM640",
+   "protocol": "teltonika",
+   "port": 5027
+  },
+  {
+   "manufacturer": "Teltonika",
+   "model": "FM6300",
+   "protocol": "teltonika",
+   "port": 5027
+  },
+  {
+   "manufacturer": "Teltonika",
+   "model": "FMU125",
+   "protocol": "teltonika",
+   "port": 5027
+  },
+  {
+   "manufacturer": "Teltonika",
+   "model": "FMU126",
+   "protocol": "teltonika",
+   "port": 5027
+  },
+  {
+   "manufacturer": "Teltonika",
+   "model": "FMU130",
+   "protocol": "teltonika",
+   "port": 5027
+  },
+  {
+   "manufacturer": "Teltonika",
+   "model": "FMB130",
+   "protocol": "teltonika",
+   "port": 5027
+  },
+  {
+   "manufacturer": "Teltonika",
+   "model": "FMB140",
+   "protocol": "teltonika",
+   "port": 5027
+  },
+  {
+   "manufacturer": "Teltonika",
+   "model": "MSP500",
+   "protocol": "teltonika",
+   "port": 5027
+  },
+  {
+   "manufacturer": "Teltonika",
+   "model": "FMB003",
+   "protocol": "teltonika",
+   "port": 5027
+  },
+  {
+   "manufacturer": "Teltonika",
+   "model": "MTB100",
+   "protocol": "teltonika",
+   "port": 5027
+  },
+  {
+   "manufacturer": "Teltonika",
+   "model": "FMB208",
+   "protocol": "teltonika",
+   "port": 5027
+  },
+  {
+   "manufacturer": "Teltonika",
+   "model": "TRB245",
+   "protocol": "teltonika",
+   "port": 5027
+  },
+  {
+   "manufacturer": "Teltonika",
+   "model": "TRB255",
+   "protocol": "teltonika",
+   "port": 5027
+  },
+  {
+   "manufacturer": "Teltonika",
+   "model": "RUT955",
+   "protocol": "teltonika",
+   "port": 5027
+  },
+  {
+   "manufacturer": "Teltonika",
+   "model": "RUT956",
+   "protocol": "teltonika",
+   "port": 5027
+  },
+  {
+   "manufacturer": "Teltonika",
+   "model": "RUTX09",
+   "protocol": "teltonika",
+   "port": 5027
+  },
+  {
+   "manufacturer": "Teltonika",
+   "model": "RUTX11",
+   "protocol": "teltonika",
+   "port": 5027
+  },
+  {
+   "manufacturer": "Teltonika",
+   "model": "RUTX12",
+   "protocol": "teltonika",
+   "port": 5027
+  },
+  {
+   "manufacturer": "Teltonika",
+   "model": "RUTX14",
+   "protocol": "teltonika",
+   "port": 5027
+  },
+  {
+   "manufacturer": "Teltonika",
+   "model": "RUTX50",
+   "protocol": "teltonika",
+   "port": 5027
+  },
+  {
+   "manufacturer": "Teltonika",
+   "model": "Bitrek Series",
+   "protocol": "teltonika",
+   "port": 5027
+  },
+  {
+   "manufacturer": "Teltonika",
+   "model": "TAT100",
+   "protocol": "teltonika",
+   "port": 5027
+  },
+  {
+   "manufacturer": "Teltonika",
+   "model": "TAT140",
+   "protocol": "teltonika",
+   "port": 5027
+  },
+  {
+   "manufacturer": "Teltonika",
+   "model": "GH-5200",
+   "protocol": "teltonika",
+   "port": 5027
+  },
+  {
+   "manufacturer": "Teltonika",
+   "model": "FCM650",
+   "protocol": "teltonika",
+   "port": 5027
+  },
+  {
+   "manufacturer": "Teltonika",
+   "model": "FMC650",
+   "protocol": "teltonika",
+   "port": 5027
+  },
+  {
+   "manufacturer": "Teltonika",
+   "model": "FMC230",
+   "protocol": "teltonika",
+   "port": 5027
+  },
+  {
+   "manufacturer": "Teltonika",
+   "model": "FMC234",
+   "protocol": "teltonika",
+   "port": 5027
+  },
+  {
+   "manufacturer": "Teltonika",
+   "model": "FMC225",
+   "protocol": "teltonika",
+   "port": 5027
+  },
+  {
+   "manufacturer": "Teltonika",
+   "model": "FMM230",
+   "protocol": "teltonika",
+   "port": 5027
+  },
+  {
+   "manufacturer": "Teltonika",
+   "model": "FMM225",
+   "protocol": "teltonika",
+   "port": 5027
+  },
+  {
+   "manufacturer": "Teltonika",
+   "model": "FMB209",
+   "protocol": "teltonika",
+   "port": 5027
+  },
+  {
+   "manufacturer": "Teltonika",
+   "model": "FMB230",
+   "protocol": "teltonika",
+   "port": 5027
+  },
+  {
+   "manufacturer": "Ruptela",
+   "model": "FM-Pro3-R",
+   "protocol": "ruptela",
+   "port": 5046
+  },
+  {
+   "manufacturer": "Ruptela",
+   "model": "FM-Tco3",
+   "protocol": "ruptela",
+   "port": 5046
+  },
+  {
+   "manufacturer": "Ruptela",
+   "model": "FM-Pro3",
+   "protocol": "ruptela",
+   "port": 5046
+  },
+  {
+   "manufacturer": "Ruptela",
+   "model": "FM-Eco3",
+   "protocol": "ruptela",
+   "port": 5046
+  },
+  {
+   "manufacturer": "Ruptela",
+   "model": "Trailer Tracker",
+   "protocol": "ruptela",
+   "port": 5046
+  },
+  {
+   "manufacturer": "Ruptela",
+   "model": "FM-ECO 4",
+   "protocol": "ruptela",
+   "port": 5046
+  },
+  {
+   "manufacturer": "Ruptela",
+   "model": "Eco5",
+   "protocol": "ruptela",
+   "port": 5046
+  },
+  {
+   "manufacturer": "Ruptela",
+   "model": "Eco5 Lite",
+   "protocol": "ruptela",
+   "port": 5046
+  },
+  {
+   "manufacturer": "Ruptela",
+   "model": "Eco5 Lite+",
+   "protocol": "ruptela",
+   "port": 5046
+  },
+  {
+   "manufacturer": "Ruptela",
+   "model": "Eco5 BM",
+   "protocol": "ruptela",
+   "port": 5046
+  },
+  {
+   "manufacturer": "Ruptela",
+   "model": "Asset5",
+   "protocol": "ruptela",
+   "port": 5046
+  },
+  {
+   "manufacturer": "Ruptela",
+   "model": "Smart5",
+   "protocol": "ruptela",
+   "port": 5046
+  },
+  {
+   "manufacturer": "Ruptela",
+   "model": "Plug5",
+   "protocol": "ruptela",
+   "port": 5046
+  },
+  {
+   "manufacturer": "Ruptela",
+   "model": "Pro5",
+   "protocol": "ruptela",
+   "port": 5046
+  },
+  {
+   "manufacturer": "Ruptela",
+   "model": "Pro5 Lite",
+   "protocol": "ruptela",
+   "port": 5046
+  },
+  {
+   "manufacturer": "Ruptela",
+   "model": "Pro5S",
+   "protocol": "ruptela",
+   "port": 5046
+  },
+  {
+   "manufacturer": "Ruptela",
+   "model": "LCV5",
+   "protocol": "ruptela",
+   "port": 5046
+  },
+  {
+   "manufacturer": "Ruptela",
+   "model": "HCV5",
+   "protocol": "ruptela",
+   "port": 5046
+  },
+  {
+   "manufacturer": "Ruptela",
+   "model": "HCV5 Lite",
+   "protocol": "ruptela",
+   "port": 5046
+  },
+  {
+   "manufacturer": "TopFlyTech",
+   "model": "T8803",
+   "protocol": "topflytech",
+   "port": 5047
+  },
+  {
+   "manufacturer": "TopFlyTech",
+   "model": "T8801",
+   "protocol": "topflytech",
+   "port": 5047
+  },
+  {
+   "manufacturer": "TopFlyTech",
+   "model": "T8901",
+   "protocol": "topflytech",
+   "port": 5047
+  },
+  {
+   "manufacturer": "Calamp",
+   "model": "ATU-620",
+   "protocol": "calamp",
+   "port": 5082
+  },
+  {
+   "manufacturer": "Calamp",
+   "model": "LMU-1100 Series",
+   "protocol": "calamp",
+   "port": 5082
+  },
+  {
+   "manufacturer": "Calamp",
+   "model": "TTU-700 Series",
+   "protocol": "calamp",
+   "port": 5082
+  },
+  {
+   "manufacturer": "Calamp",
+   "model": "TTU-1200 Series",
+   "protocol": "calamp",
+   "port": 5082
+  },
+  {
+   "manufacturer": "Calamp",
+   "model": "TTU-2820 Series",
+   "protocol": "calamp",
+   "port": 5082
+  },
+  {
+   "manufacturer": "Calamp",
+   "model": "LMU-200 Series",
+   "protocol": "calamp",
+   "port": 5082
+  },
+  {
+   "manufacturer": "Calamp",
+   "model": "LMU-300 Series",
+   "protocol": "calamp",
+   "port": 5082
+  },
+  {
+   "manufacturer": "Calamp",
+   "model": "LMU-328",
+   "protocol": "calamp",
+   "port": 5082
+  },
+  {
+   "manufacturer": "Calamp",
+   "model": "LMU-400 Series",
+   "protocol": "calamp",
+   "port": 5082
+  },
+  {
+   "manufacturer": "Calamp",
+   "model": "LMU-700 Series",
+   "protocol": "calamp",
+   "port": 5082
+  },
+  {
+   "manufacturer": "Calamp",
+   "model": "LMU-800 Series",
+   "protocol": "calamp",
+   "port": 5082
+  },
+  {
+   "manufacturer": "Calamp",
+   "model": "LMU-900 Series",
+   "protocol": "calamp",
+   "port": 5082
+  },
+  {
+   "manufacturer": "Calamp",
+   "model": "LMU-1200 Series",
+   "protocol": "calamp",
+   "port": 5082
+  },
+  {
+   "manufacturer": "Calamp",
+   "model": "LMU-2000 Series",
+   "protocol": "calamp",
+   "port": 5082
+  },
+  {
+   "manufacturer": "Calamp",
+   "model": "LMU-2100 Series",
+   "protocol": "calamp",
+   "port": 5082
+  },
+  {
+   "manufacturer": "Calamp",
+   "model": "LMU-2600 Series",
+   "protocol": "calamp",
+   "port": 5082
+  },
+  {
+   "manufacturer": "Calamp",
+   "model": "LMU-2620",
+   "protocol": "calamp",
+   "port": 5082
+  },
+  {
+   "manufacturer": "Calamp",
+   "model": "LMU-2700 Series",
+   "protocol": "calamp",
+   "port": 5082
+  },
+  {
+   "manufacturer": "Calamp",
+   "model": "LMU-2720",
+   "protocol": "calamp",
+   "port": 5082
+  },
+  {
+   "manufacturer": "Calamp",
+   "model": "LMU-3030",
+   "protocol": "calamp",
+   "port": 5082
+  },
+  {
+   "manufacturer": "Calamp",
+   "model": "LMU-4200 Series",
+   "protocol": "calamp",
+   "port": 5082
+  },
+  {
+   "manufacturer": "Calamp",
+   "model": "LMU-4520 Series",
+   "protocol": "calamp",
+   "port": 5082
+  },
+  {
+   "manufacturer": "Calamp",
+   "model": "LMU-5000 Series",
+   "protocol": "calamp",
+   "port": 5082
+  },
+  {
+   "manufacturer": "Calamp",
+   "model": "MDT-7",
+   "protocol": "calamp",
+   "port": 5082
+  },
+  {
+   "manufacturer": "Calamp",
+   "model": "LMU-1300M",
+   "protocol": "calamp",
+   "port": 5082
+  },
+  {
+   "manufacturer": "Calamp",
+   "model": "LMU-2630LEB",
+   "protocol": "calamp",
+   "port": 5082
+  },
+  {
+   "manufacturer": "Calamp",
+   "model": "LMU-2630LNB",
+   "protocol": "calamp",
+   "port": 5082
+  },
+  {
+   "manufacturer": "Calamp",
+   "model": "LMU-2650MB",
+   "protocol": "calamp",
+   "port": 5082
+  },
+  {
+   "manufacturer": "Calamp",
+   "model": "LMU-3040LA",
+   "protocol": "calamp",
+   "port": 5082
+  },
+  {
+   "manufacturer": "Calamp",
+   "model": "LMU-3240L",
+   "protocol": "calamp",
+   "port": 5082
+  },
+  {
+   "manufacturer": "Calamp",
+   "model": "LMU-3640MB",
+   "protocol": "calamp",
+   "port": 5082
+  },
+  {
+   "manufacturer": "Calamp",
+   "model": "LMU-3641MB",
+   "protocol": "calamp",
+   "port": 5082
+  },
+  {
+   "manufacturer": "Calamp",
+   "model": "LMU-4350LB",
+   "protocol": "calamp",
+   "port": 5082
+  },
+  {
+   "manufacturer": "Calamp",
+   "model": "LMU-4351LB",
+   "protocol": "calamp",
+   "port": 5082
+  },
+  {
+   "manufacturer": "Calamp",
+   "model": "LMU-5541",
+   "protocol": "calamp",
+   "port": 5082
+  },
+  {
+   "manufacturer": "Calamp",
+   "model": "TTU-2830M",
+   "protocol": "calamp",
+   "port": 5082
+  },
+  {
+   "manufacturer": "Calamp",
+   "model": "TTU-2900MB",
+   "protocol": "calamp",
+   "port": 5082
+  },
+  {
+   "manufacturer": "Calamp",
+   "model": "ATU-1300",
+   "protocol": "calamp",
+   "port": 5082
+  },
+  {
+   "manufacturer": "Calamp",
+   "model": "ATU-1650MB",
+   "protocol": "calamp",
+   "port": 5082
+  },
+  {
+   "manufacturer": "Calamp",
+   "model": "HMU-3640LB",
+   "protocol": "calamp",
+   "port": 5082
+  },
+  {
+   "manufacturer": "Calamp",
+   "model": "MDT-8M",
+   "protocol": "calamp",
+   "port": 5082
+  },
+  {
+   "manufacturer": "Calamp",
+   "model": "MDT-8W",
+   "protocol": "calamp",
+   "port": 5082
+  },
+  {
+   "manufacturer": "TopFlyTech",
+   "model": "T8808",
+   "protocol": "t800x",
+   "port": 5094
+  },
+  {
+   "manufacturer": "TopFlyTech",
+   "model": "T8803 PRO",
+   "protocol": "t800x",
+   "port": 5094
+  },
+  {
+   "manufacturer": "TopFlyTech",
+   "model": "T8806",
+   "protocol": "t800x",
+   "port": 5094
+  },
+  {
+   "manufacturer": "TopFlyTech",
+   "model": "T8805",
+   "protocol": "t800x",
+   "port": 5094
+  },
+  {
+   "manufacturer": "TopFlyTech",
+   "model": "T8603",
+   "protocol": "t800x",
+   "port": 5094
+  },
+  {
+   "manufacturer": "TopFlyTech",
+   "model": "T800X",
+   "protocol": "t800x",
+   "port": 5094
+  },
+  {
+   "manufacturer": "TopFlyTech",
+   "model": "T880X",
+   "protocol": "t800x",
+   "port": 5094
+  },
+  {
+   "manufacturer": "TopFlyTech",
+   "model": "TLP1-LM",
+   "protocol": "t800x",
+   "port": 5094
+  },
+  {
+   "manufacturer": "TopFlyTech",
+   "model": "TLW1-10A",
+   "protocol": "t800x",
+   "port": 5094
+  },
+  {
+   "manufacturer": "TopFlyTech",
+   "model": "TLW2-6BL",
+   "protocol": "t800x",
+   "port": 5094
+  },
+  {
+   "manufacturer": "TopFlyTech",
+   "model": "TLW2-12B",
+   "protocol": "t800x",
+   "port": 5094
+  },
+  {
+   "manufacturer": "TopFlyTech",
+   "model": "TLW2-12BL",
+   "protocol": "t800x",
+   "port": 5094
+  },
+  {
+   "manufacturer": "TopFlyTech",
+   "model": "TLP2-SFB",
+   "protocol": "t800x",
+   "port": 5094
+  },
+  {
+   "manufacturer": "TopFlyTech",
+   "model": "TLW2-2BL",
+   "protocol": "t800x",
+   "port": 5094
+  },
+  {
+   "manufacturer": "Fifotrack",
+   "model": "A100",
+   "protocol": "fifotrack",
+   "port": 5124
+  },
+  {
+   "manufacturer": "Fifotrack",
+   "model": "A200",
+   "protocol": "fifotrack",
+   "port": 5124
+  },
+  {
+   "manufacturer": "Fifotrack",
+   "model": "A300",
+   "protocol": "fifotrack",
+   "port": 5124
+  },
+  {
+   "manufacturer": "Fifotrack",
+   "model": "A500",
+   "protocol": "fifotrack",
+   "port": 5124
+  },
+  {
+   "manufacturer": "Fifotrack",
+   "model": "A600",
+   "protocol": "fifotrack",
+   "port": 5124
+  },
+  {
+   "manufacturer": "Fifotrack",
+   "model": "A700",
+   "protocol": "fifotrack",
+   "port": 5124
+  },
+  {
+   "manufacturer": "Fifotrack",
+   "model": "S20",
+   "protocol": "fifotrack",
+   "port": 5124
+  },
+  {
+   "manufacturer": "Fifotrack",
+   "model": "S30",
+   "protocol": "fifotrack",
+   "port": 5124
+  },
+  {
+   "manufacturer": "Fifotrack",
+   "model": "S50",
+   "protocol": "fifotrack",
+   "port": 5124
+  },
+  {
+   "manufacturer": "Fifotrack",
+   "model": "S60",
+   "protocol": "fifotrack",
+   "port": 5124
+  },
+  {
+   "manufacturer": "Fifotrack",
+   "model": "S70",
+   "protocol": "fifotrack",
+   "port": 5124
+  },
+  {
+   "manufacturer": "Fifotrack",
+   "model": "Q1",
+   "protocol": "fifotrack",
+   "port": 5124
+  },
+  {
+   "manufacturer": "Fifotrack",
+   "model": "Q2",
+   "protocol": "fifotrack",
+   "port": 5124
+  },
+  {
+   "manufacturer": "Fifotrack",
+   "model": "Q3",
+   "protocol": "fifotrack",
+   "port": 5124
+  },
+  {
+   "manufacturer": "Fifotrack",
+   "model": "R18",
+   "protocol": "fifotrack",
+   "port": 5124
+  },
+  {
+   "manufacturer": "Fifotrack",
+   "model": "A500G",
+   "protocol": "fifotrack",
+   "port": 5124
+  },
+  {
+   "manufacturer": "Teltonika",
+   "model": "AT2000",
+   "protocol": "at2000",
+   "port": 5128
+  },
+  {
+   "manufacturer": "Teltonika",
+   "model": "DualCam",
+   "protocol": "dualcam",
+   "port": 5232
+  },
+  {
+   "manufacturer": "Meitrack",
+   "model": "T622G-F9",
+   "protocol": "t622iridium",
+   "port": 5248
+  },
+  {
+   "manufacturer": "Jimi IoT",
+   "model": "Photo/Video Upload",
+   "protocol": "jimiphoto",
+   "port": 5267
+  },
+  {
+   "manufacturer": "Teltonika",
+   "model": "Iridium",
+   "protocol": "teltonikairidium",
+   "port": 5268
+  },
+  {
+   "manufacturer": "Traccar Client",
+   "model": "App para teléfono (Android/iOS)",
+   "protocol": "osmand",
+   "port": 5055
+  }
+ ]
+}

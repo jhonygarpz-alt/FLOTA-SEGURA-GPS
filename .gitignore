@@ -1,0 +1,14 @@
+node_modules/
+dist/
+build/
+coverage/
+.env
+.env.*
+!.env.example
+*.log
+.DS_Store
+apps/web/dev-dist/
+infra/traccar/data/
+infra/traccar/logs/
+infra/traccar/.env
+backups/

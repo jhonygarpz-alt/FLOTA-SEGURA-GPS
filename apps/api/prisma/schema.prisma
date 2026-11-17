@@ -1,0 +1,237 @@
+// FLOTA SEGURA GPS — base de datos administrativa (independiente de la base de Traccar)
+// Todas las fechas se almacenan en UTC.
+
+generator client {
+  provider      = "prisma-client-js"
+  binaryTargets = ["native", "debian-openssl-3.0.x", "linux-musl-openssl-3.0.x"]
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum Role {
+  SUPERADMIN      // SECUREFLEET CONSULTING
+  COMPANY_ADMIN   // Administrador de empresa
+  MANAGER         // Gerente
+  SUPERVISOR      // Supervisor
+  MONITOR         // Monitorista
+  INSTALLER       // Instalador
+  VIEWER          // Usuario de consulta
+}
+
+enum CompanyStatus {
+  ACTIVE
+  SUSPENDED
+  CANCELLED
+}
+
+enum VehicleType {
+  TRACTOR       // Tractocamión
+  TANKER        // Autotanque
+  TRAILER       // Remolque
+  TRUCK         // Camión
+  CAR           // Automóvil
+  MOTORCYCLE    // Motocicleta
+  MACHINERY     // Maquinaria
+}
+
+enum VehicleStatus {
+  ACTIVE
+  MAINTENANCE
+  INACTIVE
+}
+
+enum DeviceStatus {
+  PENDING_CONFIG   // Pendiente de configuración
+  WAITING          // Esperando conexión
+  RECEIVING        // Recibiendo datos
+  CONNECTED        // Conectado correctamente
+  NO_COMMUNICATION // Sin comunicación
+  CONFIG_ERROR     // Error de configuración
+}
+
+model Company {
+  id           String        @id @default(uuid())
+  name         String
+  legalName    String?
+  rfc          String?
+  email        String?
+  phone        String?
+  status       CompanyStatus @default(ACTIVE)
+  timezone     String        @default("America/Mexico_City")
+  // Empresa de demostración: sus datos son simulados y nunca se mezclan con datos reales
+  isDemo       Boolean       @default(false)
+  traccarGroupId Int?        @unique
+  createdAt    DateTime      @default(now())
+  updatedAt    DateTime      @updatedAt
+
+  users        User[]
+  vehicles     Vehicle[]
+  devices      Device[]
+  operators    Operator[]
+  simCards     SimCard[]
+  auditLogs    AuditLog[]
+  subscription Subscription?
+}
+
+model User {
+  id            String    @id @default(uuid())
+  companyId     String?   // null solo para SUPERADMIN
+  company       Company?  @relation(fields: [companyId], references: [id], onDelete: Cascade)
+  email         String    @unique
+  name          String
+  passwordHash  String
+  role          Role      @default(VIEWER)
+  // Permisos granulares adicionales/revocados: { "vehicles:write": true, "commands:send": false }
+  permissions   Json      @default("{}")
+  mfaEnabled    Boolean   @default(false)
+  mfaSecret     String?
+  active        Boolean   @default(true)
+  failedLogins  Int       @default(0)
+  lockedUntil   DateTime?
+  lastLoginAt   DateTime?
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+
+  sessions      RefreshSession[]
+
+  @@index([companyId])
+}
+
+model RefreshSession {
+  id         String    @id @default(uuid())
+  userId     String
+  user       User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  tokenHash  String    @unique
+  userAgent  String?
+  ip         String?
+  expiresAt  DateTime
+  revokedAt  DateTime?
+  createdAt  DateTime  @default(now())
+
+  @@index([userId])
+}
+
+model Vehicle {
+  id             String        @id @default(uuid())
+  companyId      String
+  company        Company       @relation(fields: [companyId], references: [id], onDelete: Cascade)
+  economicNumber String        // Número económico
+  plates         String?
+  vin            String?
+  type           VehicleType   @default(TRUCK)
+  brand          String?
+  model          String?
+  year           Int?
+  photoUrl       String?
+  status         VehicleStatus @default(ACTIVE)
+  operatorId     String?
+  operator       Operator?     @relation(fields: [operatorId], references: [id], onDelete: SetNull)
+  createdAt      DateTime      @default(now())
+  updatedAt      DateTime      @updatedAt
+
+  device         Device?
+
+  @@unique([companyId, economicNumber])
+  @@index([companyId])
+}
+
+model Device {
+  id              String       @id @default(uuid())
+  companyId       String
+  company         Company      @relation(fields: [companyId], references: [id], onDelete: Cascade)
+  name            String
+  manufacturer    String
+  model           String
+  protocol        String       // nombre del protocolo en Traccar (p. ej. suntech, teltonika, gt06, osmand)
+  port            Int          // puerto del protocolo en el servidor Traccar
+  uniqueId        String       @unique // identificador que el equipo reporta (normalmente IMEI)
+  serialNumber    String?
+  traccarDeviceId Int?         @unique
+  vehicleId       String?      @unique
+  vehicle         Vehicle?     @relation(fields: [vehicleId], references: [id], onDelete: SetNull)
+  simCardId       String?      @unique
+  simCard         SimCard?     @relation(fields: [simCardId], references: [id], onDelete: SetNull)
+  status          DeviceStatus @default(PENDING_CONFIG)
+  isDemo          Boolean      @default(false)
+  lastPositionAt  DateTime?
+  createdAt       DateTime     @default(now())
+  updatedAt       DateTime     @updatedAt
+
+  @@index([companyId])
+}
+
+model SimCard {
+  id        String   @id @default(uuid())
+  companyId String
+  company   Company  @relation(fields: [companyId], references: [id], onDelete: Cascade)
+  iccid     String   @unique
+  phone     String?
+  carrier   String?  // Telcel, AT&T, Movistar, etc.
+  apn       String?
+  apnUser   String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  device    Device?
+
+  @@index([companyId])
+}
+
+model Operator {
+  id        String    @id @default(uuid())
+  companyId String
+  company   Company   @relation(fields: [companyId], references: [id], onDelete: Cascade)
+  name      String
+  phone     String?
+  license   String?
+  photoUrl  String?
+  active    Boolean   @default(true)
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+
+  vehicles  Vehicle[]
+
+  @@index([companyId])
+}
+
+model Plan {
+  id            String         @id @default(uuid())
+  name          String         @unique
+  priceMxn      Decimal        @db.Decimal(10, 2) // precio mensual por dispositivo, MXN
+  maxDevices    Int
+  features      Json           @default("[]")
+  active        Boolean        @default(true)
+  createdAt     DateTime       @default(now())
+  subscriptions Subscription[]
+}
+
+model Subscription {
+  id          String   @id @default(uuid())
+  companyId   String   @unique
+  company     Company  @relation(fields: [companyId], references: [id], onDelete: Cascade)
+  planId      String
+  plan        Plan     @relation(fields: [planId], references: [id])
+  devicesContracted Int @default(1)
+  startsAt    DateTime @default(now())
+  renewsAt    DateTime
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model AuditLog {
+  id         String   @id @default(uuid())
+  companyId  String?
+  company    Company? @relation(fields: [companyId], references: [id], onDelete: SetNull)
+  userId     String?
+  action     String   // p. ej. auth.login, vehicle.create, device.delete
+  entity     String?
+  entityId   String?
+  metadata   Json     @default("{}")
+  ip         String?
+  createdAt  DateTime @default(now())
+
+  @@index([companyId, createdAt])
+}
