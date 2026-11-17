@@ -1,9 +1,12 @@
 #!/usr/bin/env bash
 # =====================================================================
 # FLOTA SEGURA GPS — instalación de Traccar en un VPS Ubuntu 24.04
-# Uso (como root):
-#   curl -fsSL https://raw.githubusercontent.com/<usuario>/<repo>/<rama>/infra/traccar/install.sh -o install.sh
-#   TRACCAR_DOMAIN=traccar.su-dominio.com TRACCAR_ADMIN_EMAIL=admin@su-dominio.com bash install.sh
+# Normalmente se ejecuta solo, mediante cloud-init.yaml al crear el servidor.
+# Manual (como root, con compose.yaml, Caddyfile y backup.sh en /opt/flota-traccar):
+#   bash /opt/flota-traccar/install.sh
+# Variables opcionales:
+#   TRACCAR_DOMAIN=auto (por defecto: <ip>.sslip.io, HTTPS sin comprar dominio) o su dominio
+#   TRACCAR_ADMIN_EMAIL=admin@flota.local (usuario interno de Traccar)
 # Idempotente: puede ejecutarse de nuevo sin perder datos.
 # =====================================================================
 set -euo pipefail
@@ -11,8 +14,8 @@ set -euo pipefail
 REPO_RAW="${REPO_RAW:-}"
 APP_DIR=/opt/flota-traccar
 DATA_DIR=/opt/traccar
-: "${TRACCAR_DOMAIN:?Indique TRACCAR_DOMAIN=traccar.su-dominio.com}"
-: "${TRACCAR_ADMIN_EMAIL:?Indique TRACCAR_ADMIN_EMAIL=correo del administrador de Traccar}"
+TRACCAR_DOMAIN="${TRACCAR_DOMAIN:-auto}"
+TRACCAR_ADMIN_EMAIL="${TRACCAR_ADMIN_EMAIL:-admin@flota.local}"
 GPS_PORTS_TCP="5055 5011 5027 5023 5004"
 GPS_PORTS_UDP="5011 5027 5023 5004"
 
@@ -60,6 +63,12 @@ if [ -n "$REPO_RAW" ]; then
 fi
 [ -f compose.yaml ] && [ -f Caddyfile ] || { echo "Faltan compose.yaml/Caddyfile en $APP_DIR (defina REPO_RAW)"; exit 1; }
 
+PUBLIC_IP=$(curl -4 -fs https://api.ipify.org || hostname -I | awk '{print $1}')
+if [ "$TRACCAR_DOMAIN" = "auto" ]; then
+  # sslip.io resuelve <ip-con-guiones>.sslip.io a la propia IP: permite certificado HTTPS sin dominio propio
+  TRACCAR_DOMAIN="$(echo "$PUBLIC_IP" | tr . -).sslip.io"
+fi
+
 if [ ! -f .env ]; then
   log "Generando secretos (se guardan solo en este servidor)"
   cat > .env <<ENV
@@ -98,12 +107,13 @@ if echo "$server" | grep -q '"registration":true'; then
       -X PUT http://127.0.0.1:8082/api/server -H 'Content-Type: application/json' --data-binary @-
 fi
 
+chmod 600 "$APP_DIR/RAILWAY.txt" 2>/dev/null || true
 log "Programando respaldo diario (03:15) con retención de 14 días"
 chmod +x backup.sh
 ( crontab -l 2>/dev/null | grep -v flota-traccar/backup.sh ; echo "15 3 * * * $APP_DIR/backup.sh >> /var/log/flota-traccar-backup.log 2>&1" ) | crontab -
 
-IP=$(curl -fs https://api.ipify.org || hostname -I | awk '{print $1}')
-cat <<MSG
+IP=$PUBLIC_IP
+cat <<MSG | tee "$APP_DIR/RAILWAY.txt"
 
 =====================================================================
  Traccar instalado.
@@ -113,10 +123,11 @@ cat <<MSG
    TRACCAR_ADMIN_EMAIL=$TRACCAR_ADMIN_EMAIL
    TRACCAR_ADMIN_PASSWORD=$TRACCAR_ADMIN_PASSWORD
    TRACCAR_PROXY_SECRET=$TRACCAR_PROXY_SECRET
-   TRACCAR_PUBLIC_HOST=$IP   (o un dominio que apunte a esta IP)
+   TRACCAR_PUBLIC_HOST=$IP
 
- Estos datos quedan guardados en $APP_DIR/.env (permisos 600).
+ Para volver a verlos:  cat $APP_DIR/RAILWAY.txt
  Panel de Traccar (solo por túnel SSH):
    ssh -L 8082:127.0.0.1:8082 root@$IP   y abra http://localhost:8082
 =====================================================================
 MSG
+chmod 600 "$APP_DIR/RAILWAY.txt"

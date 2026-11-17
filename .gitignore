@@ -12,3 +12,4 @@ infra/traccar/data/
 infra/traccar/logs/
 infra/traccar/.env
 backups/
+*.tsbuildinfo

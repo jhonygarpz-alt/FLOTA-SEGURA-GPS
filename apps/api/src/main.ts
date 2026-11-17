@@ -10,7 +10,8 @@ async function main() {
   const app = await NestFactory.create(AppModule, { logger: ['log', 'warn', 'error'] });
   configureApp(app);
   app.enableShutdownHooks();
-  await app.listen(e.PORT, '0.0.0.0');
+  // '::' acepta IPv6 (red privada de Railway) e IPv4
+  await app.listen(e.PORT, '::');
   const log = new Logger('Bootstrap');
   log.log(`FLOTA SEGURA GPS API escuchando en el puerto ${e.PORT}`);
   if (!traccarConfigured()) log.warn('Traccar NO configurado: solo funciona el modo demostración');
