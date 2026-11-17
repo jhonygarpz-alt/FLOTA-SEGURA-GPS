@@ -1,0 +1,82 @@
+# Traccar 6.16.0 para FLOTA SEGURA GPS (VPS con IP pública).
+# Basado en el ejemplo oficial traccar/traccar docker/compose/traccar-timescaledb.yaml
+# - La base de datos de Traccar es independiente de la base administrativa de Flota Segura.
+# - PostgreSQL NO se publica a internet.
+# - La interfaz/API de Traccar (8082) solo escucha en 127.0.0.1; el acceso externo pasa por
+#   Caddy (HTTPS) y exige el encabezado secreto que usa el backend de Flota Segura.
+services:
+  database:
+    image: timescale/timescaledb:2.30.2-pg17
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: traccar
+      POSTGRES_USER: traccar
+      POSTGRES_PASSWORD: ${TRACCAR_DB_PASSWORD:?Defina TRACCAR_DB_PASSWORD}
+      TIMESCALEDB_TELEMETRY: "off"
+    volumes:
+      - /opt/traccar/db:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U traccar -d traccar"]
+      interval: 30s
+      timeout: 5s
+      retries: 5
+
+  traccar:
+    image: traccar/traccar:6.16.0
+    restart: unless-stopped
+    depends_on:
+      database:
+        condition: service_healthy
+    environment:
+      CONFIG_USE_ENVIRONMENT_VARIABLES: "true"
+      DATABASE_DRIVER: org.postgresql.Driver
+      DATABASE_URL: jdbc:postgresql://database:5432/traccar
+      DATABASE_USER: traccar
+      DATABASE_PASSWORD: ${TRACCAR_DB_PASSWORD}
+      # Solo se inician los protocolos que se usan (clave oficial protocols.enable)
+      PROTOCOLS_ENABLE: ${TRACCAR_PROTOCOLS:-osmand,suntech,teltonika,gt06,gl200}
+    healthcheck:
+      test: ["CMD", "wget", "-q", "--spider", "http://localhost:8082/api/health"]
+      interval: 2m
+      timeout: 5s
+      start_period: 10m
+      retries: 3
+    ports:
+      - "127.0.0.1:8082:8082"   # solo local (túnel SSH para administración)
+      # Puertos de recepción GPS (catálogo oficial traccar.org/devices)
+      - "5055:5055"             # osmand  · Traccar Client (HTTP)
+      - "5011:5011"             # suntech · Suntech ST8300 y otros
+      - "5011:5011/udp"
+      - "5027:5027"             # teltonika
+      - "5027:5027/udp"
+      - "5023:5023"             # gt06    · Concox / Jimi IoT
+      - "5023:5023/udp"
+      - "5004:5004"             # gl200   · Queclink
+      - "5004:5004/udp"
+    volumes:
+      - /opt/traccar/logs:/opt/traccar/logs
+
+  caddy:
+    image: caddy:2.11.6-alpine
+    restart: unless-stopped
+    depends_on: [traccar]
+    environment:
+      TRACCAR_DOMAIN: ${TRACCAR_DOMAIN:?Defina TRACCAR_DOMAIN}
+      TRACCAR_PROXY_SECRET: ${TRACCAR_PROXY_SECRET:?Defina TRACCAR_PROXY_SECRET}
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - /opt/traccar/caddy/data:/data
+      - /opt/traccar/caddy/config:/config
+
+  autoheal:
+    image: willfarrell/autoheal:1.2.0
+    restart: always
+    environment:
+      AUTOHEAL_CONTAINER_LABEL: all
+      AUTOHEAL_INTERVAL: 60
+      AUTOHEAL_START_PERIOD: 600
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro

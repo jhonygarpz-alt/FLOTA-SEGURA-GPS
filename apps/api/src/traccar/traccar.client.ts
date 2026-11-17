@@ -21,6 +21,12 @@ export class TraccarClient {
     return env().TRACCAR_URL!.replace(/\/+$/, '');
   }
 
+  /** Encabezado exigido por el proxy del VPS (si está configurado). */
+  get proxyHeaders(): Record<string, string> {
+    const secret = env().TRACCAR_PROXY_SECRET;
+    return secret ? { 'X-Flota-Proxy-Key': secret } : {};
+  }
+
   private ensureEnabled() {
     if (!this.enabled) throw new ServiceUnavailableException('El servidor Traccar no está configurado');
   }
@@ -33,7 +39,7 @@ export class TraccarClient {
         const body = new URLSearchParams({ email: env().TRACCAR_ADMIN_EMAIL!, password: env().TRACCAR_ADMIN_PASSWORD! });
         const res = await fetch(`${this.baseUrl}/api/session`, {
           method: 'POST',
-          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded', ...this.proxyHeaders },
           body,
           signal: AbortSignal.timeout(10_000),
         });
@@ -55,7 +61,7 @@ export class TraccarClient {
     try {
       res = await fetch(`${this.baseUrl}${path}`, {
         method,
-        headers: { Cookie: cookie, Accept: 'application/json', ...(body ? { 'Content-Type': 'application/json' } : {}) },
+        headers: { ...this.proxyHeaders, Cookie: cookie, Accept: 'application/json', ...(body ? { 'Content-Type': 'application/json' } : {}) },
         body: body ? JSON.stringify(body) : undefined,
         signal: AbortSignal.timeout(20_000),
       });

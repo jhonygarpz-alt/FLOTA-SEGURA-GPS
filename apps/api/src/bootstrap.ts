@@ -12,6 +12,6 @@ export function configureApp(app: INestApplication) {
   app.enableCors({ origin: e.CORS_ORIGINS.split(',').map((s) => s.trim()), credentials: true });
   app.useGlobalPipes(new ValidationPipe({ whitelist: true, forbidNonWhitelisted: true, transform: true }));
   const http = app.getHttpAdapter().getInstance();
-  http.set('trust proxy', 1);
+  http.set('trust proxy', e.TRUST_PROXY_HOPS);
   http.disable('x-powered-by');
 }

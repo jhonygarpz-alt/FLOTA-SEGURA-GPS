@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { -webkit-tap-highlight-color: transparent; text-rendering: optimizeLegibility; }
+  body { @apply bg-pearl-100 text-slate-900 antialiased dark:bg-ink-900 dark:text-slate-100; font-feature-settings: 'cv11', 'ss01'; }
+  :focus-visible { @apply outline-none ring-2 ring-accent-500 ring-offset-2 ring-offset-pearl-100 dark:ring-offset-ink-900; }
+}
+
+@layer components {
+  .card { @apply rounded-3xl bg-white shadow-soft dark:bg-ink-800 dark:shadow-none dark:ring-1 dark:ring-white/5; }
+  .btn { @apply inline-flex items-center justify-center gap-2 rounded-2xl px-4 py-2.5 text-[15px] font-semibold transition active:scale-[.98] disabled:opacity-50 disabled:pointer-events-none; }
+  .btn-primary { @apply btn bg-brand-700 text-white hover:bg-brand-600; }
+  .btn-secondary { @apply btn bg-pearl-200 text-slate-800 hover:bg-pearl-300 dark:bg-ink-600 dark:text-slate-100 dark:hover:bg-ink-700; }
+  .btn-ghost { @apply btn text-brand-700 hover:bg-brand-50 dark:text-accent-400 dark:hover:bg-white/5; }
+  .input { @apply w-full rounded-2xl border-0 bg-pearl-100 px-4 py-3 text-[15px] text-slate-900 ring-1 ring-inset ring-pearl-200 placeholder:text-slate-400 focus:ring-2 focus:ring-brand-500 dark:bg-ink-700 dark:text-slate-100 dark:ring-white/10; }
+  .label { @apply mb-1.5 block text-[13px] font-medium text-slate-500 dark:text-slate-400; }
+  .chip { @apply inline-flex items-center gap-1.5 whitespace-nowrap rounded-full px-3.5 py-1.5 text-[13px] font-medium ring-1 ring-inset transition; }
+  .section-title { @apply px-1 text-[13px] font-semibold uppercase tracking-wide text-slate-500 dark:text-slate-400; }
+}
+
+.safe-bottom { padding-bottom: env(safe-area-inset-bottom); }
+.safe-top { padding-top: env(safe-area-inset-top); }
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { scrollbar-width: none; }
+
+.maplibregl-ctrl-group { border-radius: 14px !important; box-shadow: 0 4px 16px rgba(16,24,40,.12) !important; }
+.maplibregl-ctrl-attrib { font-size: 10px; border-radius: 8px 0 0 0; }
+.dark .maplibregl-ctrl-group { background: #121B1F; }
+.dark .maplibregl-ctrl-group button .maplibregl-ctrl-icon { filter: invert(1); }

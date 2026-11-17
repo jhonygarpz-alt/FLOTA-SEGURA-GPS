@@ -1,0 +1,16 @@
+# HTTPS automático (Let's Encrypt) para la API de Traccar.
+# Solo se atienden solicitudes que traen el encabezado secreto del backend de Flota Segura;
+# cualquier otra recibe 403, de modo que la interfaz administrativa de Traccar no queda expuesta.
+{$TRACCAR_DOMAIN} {
+	@flota header X-Flota-Proxy-Key {$TRACCAR_PROXY_SECRET}
+	handle @flota {
+		reverse_proxy traccar:8082
+	}
+	handle /api/health {
+		respond "ok" 200
+	}
+	handle {
+		respond "Forbidden" 403
+	}
+	header -Server
+}

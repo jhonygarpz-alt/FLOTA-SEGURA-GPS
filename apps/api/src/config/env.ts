@@ -14,6 +14,9 @@ const schema = z.object({
   TRACCAR_URL: z.string().url().optional().or(z.literal('')),
   TRACCAR_ADMIN_EMAIL: z.string().optional(),
   TRACCAR_ADMIN_PASSWORD: z.string().optional(),
+  // Secreto compartido con el proxy HTTPS (Caddy) del VPS: oculta Traccar al público
+  TRACCAR_PROXY_SECRET: z.string().optional(),
+  TRUST_PROXY_HOPS: z.coerce.number().default(1),
   // Host público (IP o dominio) que se configura en los equipos GPS
   TRACCAR_PUBLIC_HOST: z.string().default(''),
   DEVICE_OFFLINE_MINUTES: z.coerce.number().default(10),

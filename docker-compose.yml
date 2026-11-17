@@ -1,0 +1,66 @@
+# Entorno local completo (opcional). Producción: Railway (api, web, PostgreSQL) + VPS (Traccar).
+# Uso: cp .env.example .env && docker compose up --build
+services:
+  db:
+    image: postgres:17-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: flota
+      POSTGRES_USER: flota
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-flota-local}
+    volumes: [flota-db:/var/lib/postgresql/data]
+    # Sin puertos publicados: solo accesible dentro de la red de Docker
+
+  api:
+    build: { context: ., dockerfile: apps/api/Dockerfile }
+    restart: unless-stopped
+    depends_on: [db]
+    environment:
+      DATABASE_URL: postgresql://flota:${POSTGRES_PASSWORD:-flota-local}@db:5432/flota
+      JWT_ACCESS_SECRET: ${JWT_ACCESS_SECRET:?Defina JWT_ACCESS_SECRET en .env}
+      JWT_REFRESH_SECRET: ${JWT_REFRESH_SECRET:?Defina JWT_REFRESH_SECRET en .env}
+      TRACCAR_URL: ${TRACCAR_URL:-http://traccar:8082}
+      TRACCAR_ADMIN_EMAIL: ${TRACCAR_ADMIN_EMAIL:-}
+      TRACCAR_ADMIN_PASSWORD: ${TRACCAR_ADMIN_PASSWORD:-}
+      TRACCAR_PUBLIC_HOST: ${TRACCAR_PUBLIC_HOST:-localhost}
+      DEMO_ENABLED: "true"
+      NODE_ENV: production
+      PORT: 3000
+
+  web:
+    build: { context: ., dockerfile: apps/web/Dockerfile }
+    restart: unless-stopped
+    depends_on: [api]
+    environment:
+      API_UPSTREAM: http://api:3000
+      PORT: 8080
+    ports: ["8080:8080"]
+
+  traccar-db:
+    image: timescale/timescaledb:2.30.2-pg17
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: traccar
+      POSTGRES_USER: traccar
+      POSTGRES_PASSWORD: ${TRACCAR_DB_PASSWORD:-traccar-local}
+      TIMESCALEDB_TELEMETRY: "off"
+    volumes: [traccar-db:/var/lib/postgresql/data]
+
+  traccar:
+    image: traccar/traccar:6.16.0
+    restart: unless-stopped
+    depends_on: [traccar-db]
+    environment:
+      CONFIG_USE_ENVIRONMENT_VARIABLES: "true"
+      DATABASE_DRIVER: org.postgresql.Driver
+      DATABASE_URL: jdbc:postgresql://traccar-db:5432/traccar
+      DATABASE_USER: traccar
+      DATABASE_PASSWORD: ${TRACCAR_DB_PASSWORD:-traccar-local}
+      PROTOCOLS_ENABLE: osmand,suntech,teltonika,gt06,gl200
+    ports:
+      - "127.0.0.1:8082:8082"
+      - "5055:5055"
+
+volumes:
+  flota-db:
+  traccar-db:

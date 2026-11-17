@@ -62,7 +62,7 @@ export class TraccarSocket implements OnModuleInit, OnApplicationShutdown {
     try {
       const cookie = await this.client.sessionCookie(this.attempt > 0);
       const url = this.client.baseUrl.replace(/^http/, 'ws') + '/api/socket';
-      const ws = new WebSocket(url, { headers: { Cookie: cookie } });
+      const ws = new WebSocket(url, { headers: { ...this.client.proxyHeaders, Cookie: cookie } });
       this.ws = ws;
       ws.on('open', () => {
         this.attempt = 0;
